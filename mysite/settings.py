@@ -121,7 +121,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGIN_REDIRECT_URL = '/'
 
 #0627 추가
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = 
 
 LOGGING = {
     "version": 1,
