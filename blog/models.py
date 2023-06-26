@@ -18,7 +18,10 @@ class Post(models.Model):
     #게시글이 퍼블리시된 저장된시간. 
     published_date = models.DateTimeField(
             blank=True, null=True)
-    
+    #0627추가
+    prompt = models.CharField(max_length=200, default="Not created by AI")
+    image_prompt = models.CharField(max_length=200, default="Not created by AI")
+
     #게시글을 저장하는 메서드. 
     def publish(self):
         #self 자기자신의 오브젝트를 가리키는 약속. 
