@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-kqi25$hd8i0x1=8ksu$b9r9%6c$vde(7zmi7-gtwjzz$rjv^+n"
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -121,7 +121,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGIN_REDIRECT_URL = '/'
 
 #0627 추가
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 
 LOGGING = {
     "version": 1,
